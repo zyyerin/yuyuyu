@@ -5,7 +5,7 @@ export default class Banner extends React.Component {
     render() {
         return (
             <div>
-                <div className="upper-container">
+                <div className="hero-content">
                     <div className="banner-container">
                         <div className="centered-item title-container">
                             <div className="title-text">

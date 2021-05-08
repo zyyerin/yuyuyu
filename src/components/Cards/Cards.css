@@ -1,7 +1,15 @@
 .cards-container {
     display: flex;
-    flex-flow: column wrap;
-    /* justify-content: center; */
+    flex-flow: column;
+    justify-content: center;
     width: 100vw;
     overflow: hidden;
+}
+
+.card-container {
+    text-align: center;
+    align-self: center;
+    max-width: 1110px;
+    width: 100vw;
+    justify-content: center;
 }

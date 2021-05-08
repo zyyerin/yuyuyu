@@ -1,9 +1,13 @@
-.upper-container {
+.hero-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
     background-image: url("../../images/BG.jpg");
+    background-repeat: no-repeat;
+    background-color: aqua;
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
 }
 
 .centered-item {
@@ -12,7 +16,7 @@
 }
 
 .banner-container {
-    
+    width: 100vw;
 }
 
 .lower-container-text{
@@ -20,23 +24,21 @@
 }
 
 .title-container {
-    height: 17.8vh;
 }
 
 .subtitle-container {
-    height: 6.4vh;
-    font-size: 1em;
+    padding-top: 1em;   
 }
 
 .subtitle-discover-container {
-    padding-top: 5vh;    
+    padding-top: 1em;    
 }
 
 .title-text {
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
-    line-height: 120%;
+    line-height: 100%;
     /* or 77px */
 
     text-align: center;

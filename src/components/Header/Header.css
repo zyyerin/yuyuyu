@@ -1,7 +1,7 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 3vh 11.5vw 3vh 11.5vw;
+    padding: 3vh 17vw 3vh 17vw;
 }
 
 .signature {
@@ -9,16 +9,20 @@
 }
 
 .menu {
-    background-color: azure;
-    text-align: center;
     display: flex;
     justify-content: space-between;
+    width: 15vw;
 }
 
 .menu-text {
-    font-size: 1em;
-    text-align: center;
-    padding-left: 1vw;
+    /* width: 7vw; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    font-feature-settings: 'liga' off;
 }
 
 .header-right {

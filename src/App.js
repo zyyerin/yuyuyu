@@ -11,7 +11,7 @@ function App() {
       <div className="Banner">
         <Banner />
       </div>
-      <div className="Cards">
+      <div>
         <Cards />
       </div>
       <div>

@@ -11,7 +11,7 @@ export default class Card extends React.Component {
         const slogan = this.props.slogan;
         const slogan2 = this.props.slogan2;
         return (
-            <div className="card-container">
+            <div>
                 <div className="company-image" style={{backgroundImage: `url(${img})` }}>
                     {/* <img src={img}></img> */}
                 </div>

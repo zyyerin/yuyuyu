@@ -1,0 +1,25 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-bottom: 5vh;
+    text-align: center;
+    align-self: center;
+    padding-top: 5vh;
+}
+
+.copyright, .footer-menu {
+    align-self: flex-start;
+    padding-left: 17vw;
+    padding-right: 17vw;
+}
+
+.footer-menu {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.footer-menu-text {
+    align-self: flex-start;
+}

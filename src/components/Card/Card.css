@@ -1,22 +1,16 @@
-.card-container {
-    height: 78.8vh;
-    text-align: center;
-    align-self: center;
-    width: 100vw;
-}
-
 .company-image {
-    height: 50vh;
+    height: 400px;
+    /* height: 50vh; */
+    width: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    margin-left: 17vw;
-    margin-right: 17vw;
+    align-self: center;
+    /* background-color: blue; */
 }
 
 .lower-card-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 17vw;
-    margin-right: 17vw;
 }
 
 .lower-card-left {
@@ -33,7 +27,6 @@
 .intro-container {
     display: flex;
     flex-direction: row;
-    padding-top: 0.5vh;
 }
 
 .slogan-text, .company-name-text {
