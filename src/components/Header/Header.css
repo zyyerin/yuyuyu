@@ -1,0 +1,26 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 11.5vw 3vh 11.5vw;
+}
+
+.signature {
+    font-family: BlinkMacSystemFont;
+}
+
+.menu {
+    background-color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-text {
+    font-size: 1em;
+    text-align: center;
+    padding-left: 1vw;
+}
+
+.header-right {
+    font-family: BlinkMacSystemFont;
+}

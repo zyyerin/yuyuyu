@@ -1,0 +1,81 @@
+.card-container {
+    height: 78.8vh;
+    text-align: center;
+    align-self: center;
+    width: 100vw;
+}
+
+.company-image {
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-left: 17vw;
+    margin-right: 17vw;
+}
+
+.lower-card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17vw;
+    margin-right: 17vw;
+}
+
+.lower-card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.lower-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5vh;
+}
+
+.slogan-text, .company-name-text {
+    align-self: flex-start;
+}
+
+.company-name-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height, or 135% */
+
+    font-feature-settings: 'liga' off;
+}
+
+.project-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+    font-feature-settings: 'liga' off;
+}
+
+.intro-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    font-feature-settings: 'liga' off;
+}
+
+.slogan-text{
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    font-feature-settings: 'liga' off;
+}
