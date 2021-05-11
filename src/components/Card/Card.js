@@ -12,9 +12,7 @@ export default class Card extends React.Component {
         const slogan2 = this.props.slogan2;
         return (
             <div>
-                <div className="company-image" style={{backgroundImage: `url(${img})` }}>
-                    {/* <img src={img}></img> */}
-                </div>
+                <div className="company-image" style={{backgroundImage: `url(${img})` }}></div>
                 <div className="lower-card-container">
                     <div className="lower-card-left">
                         <div className="company-name-text">

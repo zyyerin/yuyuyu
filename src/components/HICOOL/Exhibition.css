@@ -1,0 +1,32 @@
+.exhibition-images {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 64px;
+    grid-template-columns: 540px 540px;
+    grid-template-rows: 380px 380px;
+    justify-content: center;
+}
+
+.exhibition-image1 {
+    background-image: url("../../images/hicool-exhibition-img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exhibition-image2 {
+    background-image: url("../../images/hicool-exhibition-img2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exhibition-image3 {
+    background-image: url("../../images/hicool-exhibition-img3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exhibition-image4 {
+    background-image: url("../../images/hicool-exhibition-img4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

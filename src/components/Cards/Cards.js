@@ -16,10 +16,10 @@ export default class Cards extends React.Component {
         return (
                 <div className="cards-container">
                     <div className="card-container">
-                        <Card img={hicool_img} title="HICOOL" year="2020-2021" location="Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/>
+                        <a href="/project/HICOOL" target="_blank"><Card img={hicool_img} title="HICOOL" year="2020-2021" location="Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
-                        <Card img={milvus_img} title="Milvus" year="2020" location="Shanghai,Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/>
+                        <a href="/project/Milvus" target="_blank"><Card img={milvus_img} title="Milvus" year="2020" location="Shanghai,Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
                         <Card img={slush_img} title="Slush China" year="2020" location="Nanjing, Shenzhen, Shanghai" tag="Event" slogan={slogan} slogan2={slogan2}/>

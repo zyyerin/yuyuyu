@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Banner, Cards, Footer, HICOOL } from '../../index.js';
+import { Header, Banner, Cards, Footer } from '../../index.js';
 import './Home.css';
 
 
