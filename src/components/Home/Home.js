@@ -8,7 +8,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className="Home">
-                <div className="Header">
+                <div>
                     <Header />
                 </div>
                 <div className="Banner">

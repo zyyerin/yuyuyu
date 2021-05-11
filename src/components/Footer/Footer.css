@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    padding-bottom: 5vh;
     text-align: center;
     align-self: center;
-    padding-top: 5vh;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 .copyright, .footer-menu {

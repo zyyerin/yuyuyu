@@ -8,13 +8,6 @@
     margin-top: -10px;
 }
 
-.Header {
-    height: 72px;
-    width: 100vw;
-    position: fixed;
-    background-color: white;
-}
-
 .Banner {
     width: 100vw;
     overflow: hidden;

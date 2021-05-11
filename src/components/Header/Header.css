@@ -1,17 +1,23 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 3vh 17vw 3vh 17vw;
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 .signature {
     font-family: BlinkMacSystemFont;
+    padding-left: 17vw;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     width: 15vw;
+    padding-right: 17vw;
 }
 
 .menu-text {
