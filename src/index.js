@@ -23,5 +23,8 @@ export { default as Slush } from './components/Slush/Slush';
 export { default as SlushSZ } from './components/Slush/SlushSZ';
 export { default as SlushExterior } from './components/Slush/SlushExterior';
 export { default as SlushTemplate } from './components/Templates/SlushTemplate';
+export { default as SlushGifts } from './components/Slush/SlushGifts';
+export { default as SlushSH } from './components/Slush/SlushSH';
+export { default as SlushStage } from './components/Slush/SlushStage';
 
 ReactDOM.render(<App />, document.getElementById('root'))
