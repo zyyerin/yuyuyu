@@ -22,7 +22,7 @@ export default class Cards extends React.Component {
                         <a href="/project/Milvus" target="_blank"><Card img={milvus_img} title="Milvus" year="2020" location="Shanghai,Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
-                        <Card img={slush_img} title="Slush China" year="2020" location="Nanjing, Shenzhen, Shanghai" tag="Event" slogan={slogan} slogan2={slogan2}/>
+                        <a href="/project/Slush" target="_blank"><Card img={slush_img} title="Slush China" year="2020" location="Nanjing, Shenzhen, Shanghai" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
                         <Card img={baoku_img} title="Baoku Jiangxin" year="2020" location="Shanghai" tag="Exhibition" slogan={slogan} slogan2={slogan2}/>

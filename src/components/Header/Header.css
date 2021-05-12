@@ -10,14 +10,14 @@
 
 .signature {
     font-family: BlinkMacSystemFont;
-    padding-left: 17vw;
+    padding-left: calc((100vw - 1110px)/2);
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     width: 15vw;
-    padding-right: 17vw;
+    padding-right: calc((100vw - 1110px)/2);
 }
 
 .menu-text {

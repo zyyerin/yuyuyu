@@ -19,5 +19,9 @@ export { default as MilvusMascot } from './components/Milvus/MilvusMascot';
 export { default as MilvusDiagrams } from './components/Milvus/MilvusDiagrams';
 export { default as MilvusGifts } from './components/Milvus/MilvusGifts';
 export { default as MilvusConf } from './components/Milvus/MilvusConf';
+export { default as Slush } from './components/Slush/Slush';
+export { default as SlushSZ } from './components/Slush/SlushSZ';
+export { default as SlushExterior } from './components/Slush/SlushExterior';
+export { default as SlushTemplate } from './components/Templates/SlushTemplate';
 
 ReactDOM.render(<App />, document.getElementById('root'))

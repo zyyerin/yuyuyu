@@ -16,7 +16,9 @@ export default class IntroBanner extends React.Component {
                         {brief}
                     </div>
                 </div>
-                <div className="IntroBanner-img" style={{backgroundImage: `url(${img})` }}></div>
+                <div>
+                    <img className="IntroBanner-img" src={img} alt="Slush" />
+                </div>
             </div>
         );
         

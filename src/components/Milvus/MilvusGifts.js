@@ -6,13 +6,15 @@ export default class MilvusGifts extends React.Component {
         return (
             <div className="module"> 
                 <div className="project-subtitle-text"> 
-                    Diagrams
+                    Merchandise & Gifts
                 </div>
                 <div className="milvus-gifts-images">
                     <div className="milvus-gifts-image1"></div>
                     <div className="milvus-gifts-image2"></div>
                     <div className="milvus-gifts-image3"></div>
                     <div className="milvus-gifts-image4"></div>
+                    <div className="milvus-gifts-image5"></div>
+                    <div className="milvus-gifts-image6"></div>
                 </div>
             </div>
         );

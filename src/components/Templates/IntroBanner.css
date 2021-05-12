@@ -14,9 +14,9 @@
 }
 
 .IntroBanner-img {
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 480px;
     min-height: 480px;
+    padding-left: 10px;
 }
 
 .companyName {

@@ -1,0 +1,55 @@
+.slush-sz-images {
+    display: grid;
+    grid-template-columns: 540px 540px;
+    grid-template-rows: 540px;
+    grid-column-gap: 30px;
+    grid-row-gap: 64px;
+    justify-content: center;
+}
+
+.slush-sz-image {
+    background-image: url("../../images/SZ19/s1-a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slush-sz-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.slush-sz-headline{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height, or 135% */
+    font-feature-settings: 'liga' off;
+}
+
+.slush-sz-context {
+    padding-top: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    font-feature-settings: 'liga' off;
+}
+
+.slush-sz-label {
+    padding-top: 32px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    font-feature-settings: 'liga' off;
+
+    color: #FFC700;
+}

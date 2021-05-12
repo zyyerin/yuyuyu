@@ -10,16 +10,15 @@
 
 .copyright, .footer-menu {
     align-self: flex-start;
-    padding-left: 17vw;
-    padding-right: 17vw;
+}
+
+.copyright {
+    padding-right: calc((100vw - 1110px)/2);
 }
 
 .footer-menu {
+    padding-left: calc((100vw - 1110px)/2);
     display: flex;
     width: 15vw;
     justify-content: space-between;
-}
-
-.footer-menu-text {
-    align-self: flex-start;
 }

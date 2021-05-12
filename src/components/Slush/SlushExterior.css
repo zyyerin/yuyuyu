@@ -1,0 +1,45 @@
+.slush-exterior-images {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    width: 1110px;
+    padding-left: 15px;
+}
+
+.slush-exterior-image1 {
+    grid-row: 1;
+    grid-column: 1/4;
+    width: 1110px;
+    height: 560px;
+    background-image: url("../../images/SZ19/exterior_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slush-exterior-image2 {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    width: 540px;
+    height: 800px;
+    background-image: url("../../images/SZ19/exterior_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slush-exterior-image3 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 540px;
+    background-image: url("../../images/SZ19/exterior_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slush-exterior-image4 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-image: url("../../images/SZ19/exterior_04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
