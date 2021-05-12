@@ -1,0 +1,32 @@
+.milvus-diagrams-images {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 48px;
+    grid-template-columns: 540px 540px;
+    grid-template-rows: 540px 540px;
+    justify-content: center;
+}
+
+.milvus-diagrams-image1 {
+    background-image: url("../../images/milvus-diagram-img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.milvus-diagrams-image2 {
+    background-image: url("../../images/milvus-diagram-img2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.milvus-diagrams-image3 {
+    background-image: url("../../images/milvus-diagram-img3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.milvus-diagrams-image4 {
+    background-image: url("../../images/milvus-diagram-img4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -14,5 +14,10 @@ export { default as Stage } from './components/HICOOL/Stage';
 export { default as Exhibition } from './components/HICOOL/Exhibition';
 export { default as OnlinePromotionAssets } from './components/HICOOL/OnlinePromotionAssets';
 export { default as Milvus } from './components/Milvus/Milvus';
+export { default as MilvusAbout } from './components/Milvus/MilvusAbout';
+export { default as MilvusMascot } from './components/Milvus/MilvusMascot';
+export { default as MilvusDiagrams } from './components/Milvus/MilvusDiagrams';
+export { default as MilvusGifts } from './components/Milvus/MilvusGifts';
+export { default as MilvusConf } from './components/Milvus/MilvusConf';
 
 ReactDOM.render(<App />, document.getElementById('root'))
