@@ -22,3 +22,24 @@
     width: 15vw;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 400px) {
+    .pc-view-footer {
+        display:none;
+    }
+
+    .footer-container {
+        justify-content: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .copyright {
+        padding-right: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 160%;
+    }
+}

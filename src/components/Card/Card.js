@@ -13,7 +13,8 @@ export default class Card extends React.Component {
         return (
             <div>
                 <div className="company-image" style={{backgroundImage: `url(${img})` }}></div>
-                <div className="lower-card-container">
+                {/* pv view */}
+                <div className="lower-card-container pc-view-card">
                     <div className="lower-card-left">
                         <div className="company-name-text">
                             {title}
@@ -31,6 +32,21 @@ export default class Card extends React.Component {
                         <div className="slogan-text">
                             {slogan2}
                         </div>
+                    </div>
+                </div>
+
+                {/* mobile view */}
+                <div className="lower-card-container mobile-view-card">
+                    <div className="company-name-text">
+                        {title}
+                    </div>
+                    <div className="intro-container">
+                        <div className="intro-text">{year}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+                        <div className="intro-text">{location}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
+                        <div className="intro-text"> {tag}</div>
+                    </div>
+                    <div className="slogan-text">
+                        {slogan}{slogan2}
                     </div>
                 </div>
             </div>

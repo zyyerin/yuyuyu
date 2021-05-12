@@ -2,7 +2,7 @@
     height: 400px;
     /* height: 50vh; */
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     align-self: center;
     /* background-color: blue; */
@@ -65,10 +65,57 @@
 }
 
 .slogan-text{
-    font-family: SF Pro Text;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 28px;
     font-feature-settings: 'liga' off;
+}
+
+.mobile-view-card { display:none; }
+
+@media screen and (max-width: 400px) {
+    .company-image {
+        height: 164px;
+        /* height: 50vh; */
+        width: 328px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-self: center;
+        /* background-color: blue; */
+    }
+
+    .lower-card-container {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .company-name-text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .slogan-text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        padding-top: 16px;
+    }
+
+    .intro-container{
+        padding-top: 16px;
+    }
+
+    .intro-text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .pc-view-card { display:none; }
 }

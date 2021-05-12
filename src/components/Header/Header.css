@@ -33,3 +33,25 @@
 .header-right {
     font-family: BlinkMacSystemFont;
 }
+
+.menu-svg { display:none; }
+
+@media screen and (max-width: 400px) {
+    .menu-text{ display:none; }
+
+    .header-container {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .signature {
+        font-family: BlinkMacSystemFont;
+        padding-left: 16px;
+    }
+
+    .menu-svg { 
+        display: inline;
+        padding-right: 16px; 
+    }
+}

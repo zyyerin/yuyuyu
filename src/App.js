@@ -5,7 +5,7 @@ import { BrowserRouter as Router,  Route} from 'react-router-dom';
 function App() {
   return (
       <Router >
-        <div className="Home"> 
+        <div> 
           <Route exact path="/" component={Home} />
           <Route path="/project/HICOOL" component={HICOOL} />
           <Route path="/project/Milvus" component={Milvus} />
