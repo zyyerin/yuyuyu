@@ -89,7 +89,7 @@
 
 .mobile-view-banner { display:none; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .title-text {
         font-style: normal;
         font-weight: bold;
@@ -120,10 +120,18 @@
 
         text-align: center;
         text-transform: capitalize;
+        padding-bottom: 8px;
     }
 
     .lower-container {
         padding-top: 0;
+    }
+
+    .feature-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
     }
 
     .pc-view-banner { display:none; }

@@ -74,10 +74,9 @@
 
 .mobile-view-card { display:none; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .company-image {
         height: 164px;
-        /* height: 50vh; */
         width: 328px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -117,5 +116,17 @@
         font-size: 16px;
         line-height: 100%;
     }
+
+    .project-text {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 120%;
+        /* or 38px */
+
+        text-align: center;
+        text-transform: capitalize;
+    }
+
     .pc-view-card { display:none; }
 }
