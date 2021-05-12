@@ -11,18 +11,18 @@
 .lower-card-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .lower-card-left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 .lower-card-right {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-self: center;
 }
 .intro-container {
     display: flex;

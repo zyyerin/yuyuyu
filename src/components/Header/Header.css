@@ -16,7 +16,7 @@
 .menu {
     display: flex;
     padding-right: calc((100vw - 1110px)/2);
-    padding-left: 660px;
+    padding-left: 650px;
 }
 
 .menu-text {
