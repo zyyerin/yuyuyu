@@ -13,19 +13,20 @@ export default class Cards extends React.Component {
     render() {
         const slogan = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ";
         const slogan2 = "Condimentum diam orci pretium a pharetra.";
+        const img_url = "https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/Covers/"
         return (
                 <div className="cards-container">
                     <div className="card-container">
-                        <a href="/project/HICOOL" target="_blank"><Card img={hicool_img} title="HICOOL" year="2020-2021" location="Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
+                        <a href="/project/HICOOL" target="_blank"><Card img={img_url + "hicool2020.jpg"} title="HICOOL" year="2020-2021" location="Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
-                        <a href="/project/Milvus" target="_blank"><Card img={milvus_img} title="Milvus" year="2020" location="Shanghai,Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
+                        <a href="/project/Milvus" target="_blank"><Card img={img_url + "milvus-conf-2020.jpg"} title="Milvus" year="2020" location="Shanghai,Beijing" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
-                        <a href="/project/Slush" target="_blank"><Card img={slush_img} title="Slush China" year="2020" location="Nanjing,Shenzhen,Shanghai" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
+                        <a href="/project/Slush" target="_blank"><Card img={img_url + "slush-sz-19.jpg"} title="Slush China" year="2020" location="Nanjing,Shenzhen,Shanghai" tag="Event" slogan={slogan} slogan2={slogan2}/></a>
                     </div>
                     <div className="card-container">
-                        <Card img={baoku_img} title="Baoku Jiangxin" year="2020" location="Shanghai" tag="Exhibition" slogan={slogan} slogan2={slogan2}/>
+                        <Card img={img_url + "bkjx.jpg"} title="Baoku Jiangxin" year="2020" location="Shanghai" tag="Exhibition" slogan={slogan} slogan2={slogan2}/>
                     </div>
                     {/* <Router path='/HICOOL' exact component={HICOOL} /> */}
                 </div>
