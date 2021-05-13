@@ -5,7 +5,7 @@ import "./HICOOL.css";
 export default class HICOOL extends React.Component {
     render() {
         return (
-            <div>
+            <div className="project">
                 <Header />
                 <IntroBanner companyName="HICOOL" brief="Event branding for HICOOL 2020." img={hicool_img_480}/>
                 <Exterior />

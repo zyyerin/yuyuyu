@@ -5,7 +5,7 @@ import "./Milvus.css";
 export default class Milvus extends React.Component {
     render() {
         return (
-            <div>
+            <div className="project">
                 <div className="Header">
                     <Header />
                     <IntroBanner companyName="Milvus" brief="Milvus is an open-source vector database." img={milvus_img_480}/>

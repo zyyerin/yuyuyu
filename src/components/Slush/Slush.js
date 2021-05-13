@@ -13,7 +13,7 @@ import slush_mus_fes_4 from '../../images/SZ19/musicFes_04.jpg';
 export default class Slush extends React.Component {
     render() {
         return (
-            <div>
+            <div className="project">
                 <div className="Header">
                     <Header />
                     <IntroBanner companyName="Slush China" brief="Slush is..." img={slush_hero}/>
