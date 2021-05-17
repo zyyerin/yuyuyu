@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import './Banner.css';
 
@@ -53,7 +53,7 @@ export default class Banner extends React.Component {
                             </div>
                         </div>
                         <div className="centered-item pc-view-banner">
-                            <Link><Button variant="primary" size="lg" className="about-us-button">ABOUT US</Button></Link>
+                            <Link><button className="about-us-button">ABOUT US</button></Link>
                         </div>
                     </div>
                 </div>
