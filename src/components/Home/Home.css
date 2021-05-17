@@ -35,8 +35,29 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.more-projects {
+    text-align: center;
+    align-self: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-feature-settings: 'liga' off;
+
+    color: rgba(0, 0, 0, 0.33);
+    padding-bottom: 80px;
+}
+
 @media screen and (max-width: 600px) {
     .Banner {
         padding-bottom: 48px;
+    }
+
+    .pc-view-home {
+        display: none;
     }
 }
