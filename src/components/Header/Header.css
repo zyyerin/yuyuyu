@@ -28,7 +28,7 @@
     font-feature-settings: 'liga' off;
 }
 
-.padding-left-20 {
+.menu-text-padding-left {
     padding-left: 20px;
 }
 
@@ -37,6 +37,12 @@
 }
 
 .menu-svg { display:none; }
+
+@media screen and (min-width: 1200px) {
+    .menu-text-padding-left {
+        padding-left: 10px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .menu{ display:none; }
