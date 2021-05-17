@@ -97,6 +97,7 @@
     font-feature-settings: 'liga' off;
 
     color: #FFFFFF;
+    border: none;
 }
 
 .about-us-button:active {
