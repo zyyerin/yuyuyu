@@ -8,30 +8,16 @@ export default class Card extends React.Component {
         const year = this.props.year;
         const location = this.props.location;
         const tag = this.props.tag;
-        const slogan = this.props.slogan;
-        const slogan2 = this.props.slogan2;
         return (
             <div>
                 <div className="company-image" style={{backgroundImage: `url(${img})` }}></div>
                 {/* pv view */}
                 <div className="lower-card-container pc-view-card">
-                    <div className="lower-card-left">
-                        <div className="company-name-text">
-                            {title}
-                        </div>
-                        <div className="intro-container">
-                            <div className="intro-text">{year}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div className="intro-text">{location}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                            <div className="intro-text"> {tag}</div>
-                        </div>
+                    <div className="company-name-text">
+                        {title}
                     </div>
-                    <div className="lower-card-right">
-                        <div className="slogan-text">
-                            {slogan}
-                        </div>
-                        <div className="slogan-text">
-                            {slogan2}
-                        </div>
+                    <div className="view-project">
+                        View Project ->
                     </div>
                 </div>
 
@@ -44,9 +30,6 @@ export default class Card extends React.Component {
                         <div className="intro-text">{year}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
                         <div className="intro-text">{location}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
                         <div className="intro-text"> {tag}</div>
-                    </div>
-                    <div className="slogan-text">
-                        {slogan}{slogan2}
                     </div>
                 </div>
             </div>

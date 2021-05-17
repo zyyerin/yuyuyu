@@ -50,20 +50,20 @@ export default class Banner extends React.Component {
                                 in et, lectus sit lorem id integer.
                             </div>
                         </div>
-                        <div className="centered-item subtitle-discover-container">
+                        <div className="centered-item subtitle-discover-container pc-view-banner">
                             <div className="discover-text">
                                 About us
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="lower-container">
+                <div className="lower-container mobile-view-banner">
                     <div className="lower-container-text">
                         <div className="centered-item project-text">
-                            Recent Projects
+                            Featured Projects
                         </div>
                         <div className="centered-item feature-text">
-                            Featured work by stuido Yuyuyu.
+                            Since 2018.
                         </div>
                     </div>
                 </div>

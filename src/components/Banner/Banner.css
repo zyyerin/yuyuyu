@@ -79,17 +79,15 @@
     font-feature-settings: 'liga' off;
 }
 
-.lower-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
-}
-
 .mobile-view-banner { display:none; }
 
 @media screen and (max-width: 600px) {
+    .hero-content {
+        padding-bottom: 53px;
+    }
+    .title-container {
+        margin-top: 100px;
+    }
     .title-text {
         font-style: normal;
         font-weight: bold;
@@ -124,7 +122,13 @@
     }
 
     .lower-container {
-        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower-container-text {
+       padding-top: 53px;
     }
 
     .feature-text {
