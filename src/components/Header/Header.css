@@ -40,6 +40,14 @@ nav {
 
 .menu-svg { display:none; }
 
+.animateIn {
+    transform: translateY(0px);
+}
+  
+.animateOut {
+    transform: translateY(-100%);
+}
+
 @media screen and (min-width: 1200px) {
     .menu-text-padding-left {
         padding-left: 10px;
@@ -72,13 +80,5 @@ nav {
     .menu-svg { 
         display: inline;
         padding-right: 16px; 
-    }
-
-    .animateIn {
-        transform: translateY(0px);
-    }
-      
-    .animateOut {
-        transform: translateY(-100%);
     }
 }
