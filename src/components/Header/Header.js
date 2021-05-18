@@ -47,9 +47,9 @@ export default class Header extends React.Component {
                     <img src={logo} />
                 </div>
                 <div className="menu">
-                    <div className="menu-text">Projects</div>
-                    <div className="menu-text menu-text-padding-left">Gallery</div>
-                    <div className="menu-text menu-text-padding-left">About and Contact</div>
+                    <div className="menu-text">Work</div>
+                    <div className="menu-text menu-text-padding-left">About</div>
+                    <div className="menu-text menu-text-padding-left">Contact</div>
                 </div> 
                 <div className="menu-svg">
                     <img src={menu_svg} />
