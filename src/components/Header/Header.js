@@ -22,7 +22,7 @@ export default class Header extends React.Component {
                         .removeClass('animateIn')
                         .addClass('animateOut');
                     // scrolling downwards, only here for dev purposes
-                    console.log('moving DOWN the page');
+                    // console.log('moving DOWN the page');
         
                 } else {
                     //only piece that matters
@@ -31,7 +31,7 @@ export default class Header extends React.Component {
                         .removeClass('animateOut')
                         .addClass('animateIn');        
                     // scrolling upwards 
-                    console.log('moving UP the page');
+                    // console.log('moving UP the page');
                 }
         
                 position = scroll;
