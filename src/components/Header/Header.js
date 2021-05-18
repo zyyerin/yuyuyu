@@ -19,18 +19,19 @@ export default class Header extends React.Component {
                     //only piece that matters
                     $('nav')
                         .stop(true, false)
-                        .css("position", "relative")
+                        .removeClass('animateIn')
+                        .addClass('animateOut');
                     // scrolling downwards, only here for dev purposes
-                    // console.log('moving DOWN the page');
+                    console.log('moving DOWN the page');
         
                 } else {
                     //only piece that matters
                     $('nav')
                         .stop(true, false)
-                        .css("position", "fixed");
-        
+                        .removeClass('animateOut')
+                        .addClass('animateIn');        
                     // scrolling upwards 
-                    // console.log('moving UP the page');
+                    console.log('moving UP the page');
                 }
         
                 position = scroll;
@@ -41,7 +42,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <nav>
+            <nav className="navigation">
                 <div className="signature">
                     <img src={logo} />
                 </div>
