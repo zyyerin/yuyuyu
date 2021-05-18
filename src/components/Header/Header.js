@@ -2,11 +2,46 @@ import React from "react";
 import './Header.css';
 import logo from '../../images/yuyuyu.svg';
 import menu_svg from '../../images/menu.svg';
+import $ from 'jquery'
 
 export default class Header extends React.Component {
+    componentDidMount(){    
+        $(function () {
+
+            // show hide subnav depending on scroll direction
+            var position = $(window).scrollTop();
+        
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+        
+                if (scroll > position) {
+        
+                    //only piece that matters
+                    $('nav')
+                        .stop(true, false)
+                        .css("position", "relative")
+                    // scrolling downwards, only here for dev purposes
+                    // console.log('moving DOWN the page');
+        
+                } else {
+                    //only piece that matters
+                    $('nav')
+                        .stop(true, false)
+                        .css("position", "fixed");
+        
+                    // scrolling upwards 
+                    // console.log('moving UP the page');
+                }
+        
+                position = scroll;
+            });
+        
+        });
+    }
+
     render() {
         return (
-            <div className="header-container">
+            <nav>
                 <div className="signature">
                     <img src={logo} />
                 </div>
@@ -18,7 +53,7 @@ export default class Header extends React.Component {
                 <div className="menu-svg">
                     <img src={menu_svg} />
                 </div>
-            </div>
+            </nav>
         );
     }
 }

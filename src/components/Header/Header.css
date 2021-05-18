@@ -1,6 +1,6 @@
-.header-container {
+nav {
     display: flex;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     background-color: white;
     padding-top: 27px;
@@ -45,9 +45,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
     .menu{ display:none; }
 
-    .header-container {
+    nav {
         justify-content: space-between;
         padding-top: 22px;
         padding-bottom: 22px;
