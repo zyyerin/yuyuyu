@@ -19,10 +19,6 @@ a {
     text-decoration:none;
 }
 
-a:hover{
-    text-decoration: underline;
-    color: black;
-}
 
 @media screen and (max-width: 600px) {
     .card-container {

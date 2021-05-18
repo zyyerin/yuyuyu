@@ -1,3 +1,13 @@
+.card:hover div {
+    transition: 300ms ease-in;
+    color: black;
+}
+
+.card:hover svg path{
+    transition: 300ms ease-in;
+    fill-opacity: 1;
+}
+
 .company-image {
     height: 400px;
     /* height: 50vh; */
@@ -128,4 +138,6 @@
     }
 
     .pc-view-card { display:none; }
+
+    .mobile-view-card{display: block;}
 }
