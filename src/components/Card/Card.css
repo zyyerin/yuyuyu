@@ -1,10 +1,27 @@
+.card div {
+    transition: 400ms linear; /* vendorless fallback */
+    -o-transition: 400ms linear; /* opera */
+    -ms-transition: 400ms linear; /* IE 10 */
+    -moz-transition: 400ms linear; /* Firefox */
+    -webkit-transition: 400ms linear; /*safari and chrome */
+}
+
 .card:hover div {
-    transition: 300ms ease-in;
+    transition: 400ms linear;
     color: black;
 }
 
+.card svg path{
+    transition: 400ms linear;
+    fill-opacity: 0.33;
+    -o-transition: 400ms linear; /* opera */
+    -ms-transition: 400ms linear; /* IE 10 */
+    -moz-transition: 400ms linear; /* Firefox */
+    -webkit-transition: 400ms linear; /*safari and chrome */
+}
+
 .card:hover svg path{
-    transition: 300ms ease-in;
+    transition: 400ms ease-in;
     fill-opacity: 1;
 }
 
