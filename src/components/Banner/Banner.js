@@ -52,7 +52,7 @@ export default class Banner extends React.Component {
                             </div>
                         </div>
                         <div className="centered-item pc-view-banner">
-                            <Link><button className="about-us-button">ABOUT US</button></Link>
+                            <Link to="#"><button className="about-us-button">ABOUT US</button></Link>
                         </div>
                     </div>
                 </div>

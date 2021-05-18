@@ -44,7 +44,7 @@ export default class Header extends React.Component {
         return (
             <nav className="navigation">
                 <div className="signature">
-                    <img src={logo} />
+                    <img src={logo} alt="logo"/>
                 </div>
                 <div className="menu">
                     <div className="menu-text">Work</div>
@@ -52,7 +52,7 @@ export default class Header extends React.Component {
                     <div className="menu-text menu-text-padding-left">Contact</div>
                 </div> 
                 <div className="menu-svg">
-                    <img src={menu_svg} />
+                    <img src={menu_svg} alt="menu" />
                 </div>
             </nav>
         );

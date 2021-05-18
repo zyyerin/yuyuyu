@@ -1,7 +1,6 @@
 import React from "react";
 import './Card.css';
 import { ReactComponent as RightArrow } from '../../images/right_arrow.svg';
-import $ from 'jquery'
 export default class Card extends React.Component {
 
     render() {
@@ -15,6 +14,7 @@ export default class Card extends React.Component {
             <div className="card">
                 {/* pv view */}
                 <img 
+                    alt="company image"
                     className="company-image pc-view-card"  
                     src={img} 
                     onMouseOver={(e) => {
@@ -22,7 +22,8 @@ export default class Card extends React.Component {
                     }}
                     onMouseOut={(e) => {
                         e.currentTarget.src = img; 
-                    }}>
+                    }}
+                    >
                 </img>
                 <div className="lower-card-container pc-view-card">
                     <div className="company-name-text">
@@ -34,7 +35,7 @@ export default class Card extends React.Component {
                 </div>
 
                 {/* mobile view */}
-                <img className="company-image mobile-view-card"  src={img_hover}></img>
+                <img className="company-image mobile-view-card"  alt="company image" src={img_hover}></img>
                 <div className="lower-card-container mobile-view-card">
                     <div className="company-name-text">
                         {title}

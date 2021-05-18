@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, BrowserRouter as Router, Switch, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Cards.css';
 import { default as Card } from '../Card/Card';
 import hicool_img from '../../images/cover_hicool2020_bnw.jpg';
