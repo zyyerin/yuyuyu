@@ -42,14 +42,16 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <nav className="navigation">
-                <div className="signature">
-                    <img src={logo} alt="logo"/>
+            <nav className="nav-bar">
+                <div className="logo">
+                     <a href="/">
+                         <img src={logo} alt="Logo of Yuyuyu Design"/>
+                    </a>
                 </div>
                 <div className="menu">
-                    <div className="menu-text">Work</div>
-                    <div className="menu-text menu-text-padding-left">About</div>
-                    <div className="menu-text menu-text-padding-left">Contact</div>
+                    <div className="disabled">Work</div>
+                    <div className="disabled">About</div>
+                    <div className="disabled">Contact</div>
                 </div> 
                 <div className="menu-svg">
                     <img src={menu_svg} alt="menu" />

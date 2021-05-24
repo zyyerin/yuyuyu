@@ -15,7 +15,7 @@ export default class Home extends React.Component {
                 <div>
                     <Cards />
                 </div>
-                <div className="more-projects pc-view-home">
+                <div className="more-projects">
                     More Projects coming soon...
                 </div>
                 <div>

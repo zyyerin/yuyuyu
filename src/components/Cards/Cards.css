@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -10,7 +10,7 @@
     text-align: center;
     align-self: center;
     max-width: 1110px;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     padding-bottom: 80px;
 }
@@ -20,11 +20,11 @@ a {
 }
 
 
-@media screen and (max-width: 600px) {
-    .card-container {
-        max-width: 328px;
+@media screen and (max-width: 800px) {
+     .card-container {
+        /* max-width: 328px;
         padding-bottom: 16px;
         text-align: left;
-        padding-bottom: 32px;
-    }
+        padding-bottom: 32px; */
+    } 
 }

@@ -1,23 +1,18 @@
 .card div {
-    transition: 400ms linear; /* vendorless fallback */
-    -o-transition: 400ms linear; /* opera */
-    -ms-transition: 400ms linear; /* IE 10 */
-    -moz-transition: 400ms linear; /* Firefox */
-    -webkit-transition: 400ms linear; /*safari and chrome */
-}
-
-.card:hover div {
-    transition: 400ms linear;
-    color: black;
+    transition: 400ms; /* vendorless fallback */
+    -o-transition: 400ms; /* opera */
+    -ms-transition: 400ms; /* IE 10 */
+    -moz-transition: 400ms; /* Firefox */
+    -webkit-transition: 400ms; /*safari and chrome */
 }
 
 .card svg path{
-    transition: 400ms linear;
+    transition: 400ms;
     fill-opacity: 0.33;
-    -o-transition: 400ms linear; /* opera */
-    -ms-transition: 400ms linear; /* IE 10 */
-    -moz-transition: 400ms linear; /* Firefox */
-    -webkit-transition: 400ms linear; /*safari and chrome */
+    -o-transition: 400ms; /* opera */
+    -ms-transition: 400ms; /* IE 10 */
+    -moz-transition: 400ms; /* Firefox */
+    -webkit-transition: 400ms; /*safari and chrome */
 }
 
 .card:hover svg path{
@@ -25,52 +20,22 @@
     fill-opacity: 1;
 }
 
-.company-image {
-    height: 400px;
-    /* height: 50vh; */
+.cover {
+    height: 50vh;
+    max-height: 400px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     align-self: center;
-    /* background-color: blue; */
 }
 
-.lower-card-container {
+.card-info {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    align-items: center;
 }
 
-.lower-card-left {
-    display: flex;
-    flex-direction: column;
-}
-
-.lower-card-right {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-}
-.intro-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.lower-card-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-}
-
-.slogan-text {
-    align-self: flex-start;
-}
-
-.view-project, .company-name-text {
-    align-self: center;
-}
-
-.view-project {
+.btn_text {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -82,79 +47,41 @@
     font-feature-settings: 'liga' off;
 
     color: rgba(0, 0, 0, 0.33);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.2s;
 }
 
-.company-name-text {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
-    /* identical to box height, or 125% */
-
-    text-transform: capitalize;
-    font-feature-settings: 'liga' off;
+.btn_text:hover {
+    border-bottom: 2px solid black;
+    transition: 0.2s;
     color: black;
 }
 
 .mobile-view-card { display:none; }
 
-@media screen and (max-width: 600px) {
-    .company-image {
-        height: 164px;
-        width: 328px;
-        background-size: cover;
+@media screen and (max-width: 800px) {
+    .card {
+        width: calc(100vw - 2em);
+        margin: auto;
+        padding: 0;
+    }
+    .cover {
+        width: 100%;
+        height: auto;
+        background-size: contain;   
         background-repeat: no-repeat;
-        align-self: center;
-        /* background-color: blue; */
+        /* align-self: center; */
     }
 
-    .lower-card-container {
+    .card-info {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        text-align: left;
         flex-direction: column;
     }
 
-    .company-name-text {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 28px;
-        line-height: 120%;
-        align-self: flex-start;
+    .card-info > *{
+        width: 100%;
+        margin: 0.25em 0;
     }
-
-    .slogan-text{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 160%;
-        padding-top: 16px;
-        color: black;
-    }
-
-    .intro-container{
-        padding-top: 16px;
-    }
-
-    .intro-text {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 100%;
-        color: black;
-    }
-
-    .project-text {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 120%;
-        /* or 38px */
-
-        text-align: center;
-        text-transform: capitalize;
-    }
-
-    .pc-view-card { display:none; }
-
-    .mobile-view-card{display: block;}
 }

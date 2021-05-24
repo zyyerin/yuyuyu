@@ -1,34 +1,25 @@
 nav {
     display: flex;
-    width: 100%;
+    width: calc(100vw - 8em);
     position: fixed;
-    background-color: white;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    margin-top: -10px;
+    top: 0;
+    background-color: #ffffff;
+    padding: 2em 4em;
     justify-content: space-between;
-}
-
-.signature {
-    font-family: BlinkMacSystemFont;
-    padding-left: calc((100vw - 1110px)/2);
+    transition: 0.4s;
 }
 
 .menu {
+    width: 15em;
     display: flex;
-    padding-right: calc((100vw - 1110px)/2);
-    padding-left: 650px;
-    width: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.menu-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
-    font-feature-settings: 'liga' off;
+.disabled {
+    text-decoration: line-through;
 }
+
 
 .menu-text-padding-left {
     margin-left: 32px;
@@ -48,37 +39,33 @@ nav {
     transform: translateY(-100%);
 }
 
-@media screen and (min-width: 1200px) {
-    .menu-text-padding-left {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navigation {
+@media screen and (max-width: 800px) {
+    .nav-bar {
         z-index: 4;
         transition: all 300ms ease-in-out;
         position: fixed;
-        width: 100%;
-        overflow-x: hidden;
+        width: calc(100vw - 4em);
+        padding: 1em 2em;
+        display: flex;
+        align-items: center;
+        /* overflow-x: hidden; */
     }
 
     .menu{ display:none; }
 
     nav {
         justify-content: space-between;
-        padding-top: 22px;
-        padding-bottom: 22px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
 
-    .signature {
-        font-family: BlinkMacSystemFont;
-        padding-left: 16px;
+    .menu-svg {
+        display: inline-flex;
+        padding: 1em;
+        border-radius: 100%;
+        transition: 0.4s;
     }
-
-    .menu-svg { 
-        display: inline;
-        padding-right: 16px; 
+    .menu-svg:hover {
+        background-color: rgba(0,0,0,0.1);
+        transition: 0.4s;
     }
 }

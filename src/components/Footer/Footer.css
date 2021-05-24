@@ -13,7 +13,8 @@
 }
 
 .copyright {
-    padding-right: calc((100vw - 1110px)/2);
+    margin: auto;
+    padding: 2em;
 }
 
 .footer-menu {
@@ -32,14 +33,5 @@
         justify-content: center;
         padding-top: 24px;
         padding-bottom: 24px;
-        border-top: 1px solid rgba(0, 0, 0, .1);
-    }
-
-    .copyright {
-        padding-right: 0;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 160%;
     }
 }

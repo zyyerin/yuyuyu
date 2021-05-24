@@ -12,38 +12,24 @@ export default class Card extends React.Component {
         const tag = this.props.tag;
         return (
             <div className="card">
-                {/* pv view */}
                 <img 
-                    alt="company image"
-                    className="company-image pc-view-card"  
+                    alt="Project Cover"
+                    className="cover"  
                     src={img} 
-                    onMouseOver={(e) => {
-                        e.currentTarget.src = img_hover; 
-                    }}
-                    onMouseOut={(e) => {
-                        e.currentTarget.src = img; 
-                    }}
+                    // onMouseOver={(e) => {
+                    //     e.currentTarget.src = img_hover; 
+                    // }}
+                    // onMouseOut={(e) => {
+                    //     e.currentTarget.src = img; 
+                    // }}
                     >
                 </img>
-                <div className="lower-card-container pc-view-card">
-                    <div className="company-name-text">
+                <div className="card-info">
+                    <h2>
                         {title}
-                    </div>
-                    <div className="view-project">
+                    </h2>
+                    <div className="btn_text">
                         View Project <RightArrow className="right_arrow"/>
-                    </div>
-                </div>
-
-                {/* mobile view */}
-                <img className="company-image mobile-view-card"  alt="company image" src={img_hover}></img>
-                <div className="lower-card-container mobile-view-card">
-                    <div className="company-name-text">
-                        {title}
-                    </div>
-                    <div className="intro-container">
-                        <div className="intro-text">{year}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                        <div className="intro-text">{location}&nbsp;&nbsp;|&nbsp;&nbsp;</div>
-                        <div className="intro-text"> {tag}</div>
                     </div>
                 </div>
             </div>

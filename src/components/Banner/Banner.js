@@ -6,63 +6,21 @@ export default class Banner extends React.Component {
     render() {
         return (
             <div>
-                <div className="hero-content">
-                    <div className="banner-container">
-                        <div className="centered-item title-container">
+                <div className="hero">
 
+                    <video id="background-video" loop autoPlay>
+                      <source src='https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/May.mp4' type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <div className="hero-content">
+                            <h1>Visual design studio based in Shanghai</h1>
                             {/* pc view-banner */}
-                            <div className="title-text pc-view-banner">
-                                Visual design studio 
+                            <div className="subtitle-text">
+                         @Yuyuyu, We believe in the value of design is beyond aethetics. Together with our clients, we create memorable and meaningful experiences for people.
                             </div>
-                            <div className="title-text pc-view-banner">
-                                based in Shanghai 
-                            </div>
-
-                            {/* mobile view-banner */}
-                            <div className="title-text mobile-view-banner">
-                                Visual design 
-                            </div>
-                            <div className="title-text mobile-view-banner">
-                                studio based in 
-                            </div>
-                            <div className="title-text mobile-view-banner">
-                               Shanghai 
-                            </div>
-
-                        </div>
-                        <div className="centered-item subtitle-container">
-
-                            {/* pc view-banner */}
-                            <div className="subtitle-text pc-view-banner">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
-                            </div>
-                            <div className="subtitle-text pc-view-banner">
-                                odio in et, lectus sit lorem id integer.
-                            </div>
-
-                            {/* mobile view-banner */}
-                            <div className="subtitle-text mobile-view-banner">
-                                Lorem ipsum dolor sit amet, 
-                            </div>
-                            <div className="subtitle-text mobile-view-banner">
-                                consectetur adipiscing elit. Nunc odio
-                            </div>
-                            <div className="subtitle-text mobile-view-banner">
-                                in et, lectus sit lorem id integer.
-                            </div>
-                        </div>
-                        <div className="centered-item pc-view-banner">
-                            <Link to="#"><button className="about-us-button">ABOUT US</button></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="lower-container mobile-view-banner">
-                    <div className="lower-container-text">
-                        <div className="centered-item project-text">
-                            Featured Projects
-                        </div>
-                        <div className="centered-item feature-text">
-                            Since 2018.
+                        <div className="centered-item">
+                            <Link to="#"><button className="btn_primary">What we do</button></Link>
                         </div>
                     </div>
                 </div>
