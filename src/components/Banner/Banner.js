@@ -9,7 +9,7 @@ export default class Banner extends React.Component {
                 <div className="hero">
 
                     <video id="background-video" loop autoPlay>
-                      <source src='https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/May.mp4' type="video/mp4" />
+                      <source src='https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/may.mp4' type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
 

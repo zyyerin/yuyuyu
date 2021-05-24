@@ -1,24 +1,7 @@
-.cards-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
-}
-
 .card-container {
-    text-align: center;
-    align-self: center;
-    max-width: 1110px;
     width: 100%;
-    justify-content: center;
     padding-bottom: 80px;
 }
-
-a { 
-    text-decoration:none;
-}
-
 
 @media screen and (max-width: 800px) {
      .card-container {

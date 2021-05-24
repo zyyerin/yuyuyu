@@ -9,18 +9,20 @@ export default class Home extends React.Component {
         return (
             <div className="Home">
                 <Header/>
-                <div className="Banner">
-                    <Banner />
+
+                <div className="home-content">
+                    <div className="Banner">
+                        <Banner />
+                    </div>
+                    <div>
+                        <Cards />
+                    </div>
+                    <div className="more-projects">
+                        More Projects coming soon...
+                    </div>
                 </div>
-                <div>
-                    <Cards />
-                </div>
-                <div className="more-projects">
-                    More Projects coming soon...
-                </div>
-                <div>
-                    <Footer />
-                </div>
+                
+                <Footer />
             </div>
         );
     }

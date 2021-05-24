@@ -12,6 +12,10 @@ a, h1, h2, h3, h4, h5 {
     color: black;
 }
 
+h1 {
+    text-align: center;
+}
+
 h2 {
     font-style: normal;
     font-weight: bold;
@@ -24,6 +28,10 @@ h2 {
     font-size: 1em !important;
     overflow: hidden;
     width: 100vw;
+}
+.home-content {
+    margin: 4em;
+    outline: 2px solid red;
 }
 
 .Banner {

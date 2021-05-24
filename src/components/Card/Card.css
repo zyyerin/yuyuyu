@@ -1,3 +1,7 @@
+a { 
+    text-decoration:none;
+}
+
 .card div {
     transition: 400ms; /* vendorless fallback */
     -o-transition: 400ms; /* opera */
@@ -21,7 +25,7 @@
 }
 
 .cover {
-    height: 50vh;
+    /* height: 50vh; */
     max-height: 400px;
     width: 100%;
     background-size: cover;
