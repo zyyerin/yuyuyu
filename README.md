@@ -15,4 +15,6 @@ tcb hosting:deploy -e yuyuyu-0g2936zwf38dde25
 ```
 npm run build
 npm run deploy
+git checkout gh-pages
+echo 'yuyuyu.design' > CNAME
 ```
