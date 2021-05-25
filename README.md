@@ -17,4 +17,8 @@ npm run build
 npm run deploy
 git checkout gh-pages
 echo 'yuyuyu.design' > CNAME
+git add .
+git commit -m "set cname"
+git push origin gh-pages
+git checkout main
 ```
