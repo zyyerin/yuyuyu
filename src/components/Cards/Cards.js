@@ -19,7 +19,6 @@ export default class Cards extends React.Component {
                     <div className="card-container">
                         <Card img_hover={img_url + "bkjx.jpg"} title="Baoku Jiangxin" img="https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/Covers/bkjx.jpg" year="2020" location="Shanghai" tag="Exhibition" />
                     </div>
-                    {/* <Router path='/HICOOL' exact component={HICOOL} /> */}
                 </div>
         );
     }
