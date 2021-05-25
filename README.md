@@ -15,10 +15,14 @@ tcb hosting:deploy -e yuyuyu-0g2936zwf38dde25
 ```
 npm run build
 npm run deploy
+```
+
+#### how to fix 404
+```
 git checkout gh-pages
 echo 'yuyuyu.design' > CNAME
 git add CNAME
 git commit -m "set cname"
-git push origin gh-pages
+git push origin gh-pages -f
 git checkout main
 ```
