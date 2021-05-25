@@ -42,7 +42,7 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <nav className="nav-bar">
+            <nav className="navbar">
                 <div className="logo">
                      <a href="/">
                          <img src={logo} alt="Logo of Yuyuyu Design"/>

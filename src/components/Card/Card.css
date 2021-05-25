@@ -2,6 +2,11 @@ a {
     text-decoration:none;
 }
 
+.card {
+    width: 100%;
+    margin-bottom: 4em;
+}
+
 .card div {
     transition: 400ms; /* vendorless fallback */
     -o-transition: 400ms; /* opera */
@@ -12,7 +17,7 @@ a {
 
 .card svg path{
     transition: 400ms;
-    fill-opacity: 0.33;
+    fill-opacity: 0.2;
     -o-transition: 400ms; /* opera */
     -ms-transition: 400ms; /* IE 10 */
     -moz-transition: 400ms; /* Firefox */
@@ -20,7 +25,7 @@ a {
 }
 
 .card:hover svg path{
-    transition: 400ms ease-in;
+    transition: 0.2s ease-in;
     fill-opacity: 1;
 }
 
@@ -37,26 +42,23 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2em 0;
 }
 
 .btn_text {
+    cursor: pointer;
     font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.15em;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 2em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-feature-settings: 'liga' off;
 
-    color: rgba(0, 0, 0, 0.33);
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    color: rgba(0,0,0,0.2);
     transition: 0.2s;
 }
 
 .btn_text:hover {
-    border-bottom: 2px solid black;
     transition: 0.2s;
     color: black;
 }
@@ -65,27 +67,26 @@ a {
 
 @media screen and (max-width: 800px) {
     .card {
-        width: calc(100vw - 2em);
+        width: calc(100vw - 4em);
         margin: auto;
-        padding: 0;
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start; */
     }
+
     .cover {
         width: 100%;
-        height: auto;
-        background-size: contain;   
-        background-repeat: no-repeat;
-        /* align-self: center; */
     }
 
     .card-info {
-        width: 100%;
         display: flex;
         text-align: left;
         flex-direction: column;
+        margin: 1em 0 4em;
     }
 
     .card-info > *{
         width: 100%;
-        margin: 0.25em 0;
+        margin: 0.1em 0;
     }
 }

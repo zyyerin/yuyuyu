@@ -1,11 +1,13 @@
-nav {
-    display: flex;
+.navbar {
+    z-index: 4;
     width: calc(100vw - 8em);
+    padding: 2em 4em;
     position: fixed;
     top: 0;
     background-color: #ffffff;
-    padding: 2em 4em;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     transition: 0.4s;
 }
 
@@ -40,20 +42,18 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
-    .nav-bar {
-        z-index: 4;
+    .navbar {
         transition: all 300ms ease-in-out;
         position: fixed;
-        width: calc(100vw - 4em);
-        padding: 1em 2em;
+        width: calc(100vw - 3em);
+        padding: 1em 1.5em;
         display: flex;
         align-items: center;
-        /* overflow-x: hidden; */
     }
 
     .menu{ display:none; }
 
-    nav {
+    .navbar {
         justify-content: space-between;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }

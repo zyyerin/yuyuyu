@@ -14,14 +14,9 @@ export default class Banner extends React.Component {
                     </video>
 
                     <div className="hero-content">
-                            <h1>Visual design studio based in Shanghai</h1>
-                            {/* pc view-banner */}
-                            <div className="subtitle-text">
-                         @Yuyuyu, We believe in the value of design is beyond aethetics. Together with our clients, we create memorable and meaningful experiences for people.
-                            </div>
-                        <div className="centered-item">
-                            <Link to="#"><button className="btn_primary">What we do</button></Link>
-                        </div>
+                        <h1>Visual design studio based in Shanghai</h1>
+                        <p>@Yuyuyu, We believe in the value of design is beyond aethetics. Together with our clients, we create memorable and meaningful experiences for people.</p>
+                        <Link to="#"><button className="btn_primary">What we do</button></Link>
                     </div>
                 </div>
             </div>
