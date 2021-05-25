@@ -18,11 +18,8 @@ npm run deploy
 ```
 
 #### how to fix 404
-```
-git checkout gh-pages
-echo 'yuyuyu.design' > CNAME
-git add CNAME
-git commit -m "set cname"
-git push origin gh-pages -f
-git checkout main
-```
+1. Go to `https://github.com/zyyerin/yuyuyu/tree/gh-pages`
+2. Add file -> Create new file
+3. Edit like below
+<img width="700" alt="Screen Shot 2021-05-25 at 3 57 09 PM" src="https://user-images.githubusercontent.com/17645053/119461133-fdaf2480-bd71-11eb-8522-5cd2f64d7302.png">
+4. Click the button 'Commit new file'
