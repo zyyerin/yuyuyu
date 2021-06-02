@@ -12,4 +12,5 @@ export { default as IntroBanner } from './components/Templates/IntroBanner';
 export { default as Milvus } from './pages/projects/Milvus';
 export { default as Slush } from './pages/projects/Slush';
 export { default as SlushTemplate } from './components/Templates/SlushTemplate';
+export { default as baokujiangxin } from './pages/projects/baokujiangxin';
 ReactDOM.render(<App />, document.getElementById('root'))
