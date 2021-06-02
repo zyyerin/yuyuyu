@@ -1,6 +1,6 @@
 import React from 'react'
-import { Header, Banner, Cards, Footer } from '../../index.js';
-import './Home.css';
+import { Header, Banner, Cards, Footer } from '../index.js';
+import './styles/Home.css';
 
 
 export default class Home extends React.Component {
