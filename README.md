@@ -18,7 +18,7 @@ npm run deploy
 ```
 
 #### how to fix 404
-1. Go to `https://github.com/zyyerin/yuyuyu/tree/gh-pages`
+1. Go to [gh-pages branch](https://github.com/zyyerin/yuyuyu/tree/gh-pages)
 2. Add file -> Create new file
 3. Edit like below
 <img width="700" alt="Screen Shot 2021-05-25 at 3 57 09 PM" src="https://user-images.githubusercontent.com/17645053/119461133-fdaf2480-bd71-11eb-8522-5cd2f64d7302.png">
