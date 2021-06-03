@@ -8,7 +8,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className="Home">
-                <Header/>
+                <Header isRoot={true}/>
 
                 <div className="home-content">
                     <div className="Banner">

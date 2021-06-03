@@ -92,14 +92,20 @@ export default class Header extends React.Component {
     }
 
     render() {
+        const isRoot = this.props.isRoot;
         return (
             <SearchProvider config={configurationOptions}>
                 <nav className="navbar">
-                    <a href="/#/home" replace>
+                    {!isRoot && 
+                    <div className="logo">
+                        <a href="/#/home" replace><img src={logo} alt="Logo of Yuyuyu Design"/></a>
+                    </div>
+                    }
+                    {isRoot && 
                         <div className="logo">
-                                <img src={logo} alt="Logo of Yuyuyu Design"/>
+                            <img src={logo} alt="Logo of Yuyuyu Design"/>
                         </div>
-                    </a>
+                    }
                     <div className="menu">
                         <div className="disabled">Work</div>
                         <div className="disabled">About</div>
