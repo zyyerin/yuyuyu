@@ -1,0 +1,30 @@
+[
+  {
+    "name": "HICOOL",
+    "year": 2020,
+    "location": "Beijing",
+    "project_url": "https://yuyuyu.design/#/project/HICOOL",
+    "project_test_url": "https://yuyuyu-0g2936zwf38dde25-1258568418.tcloudbaseapp.com/#/project/hicool2020"
+  }, 
+  {
+      "name": "Milvus",
+      "year": 2020,
+      "location": "Shanghai,Beijing",
+      "project_url": "https://yuyuyu.design/#/project/Milvus",
+      "project_test_url": "https://yuyuyu-0g2936zwf38dde25-1258568418.tcloudbaseapp.com/#/project/Milvus"
+  },
+  {
+      "name": "Slush China",
+      "year": 2020,
+      "location": "Nanjing,Shenzhen,Shanghai",
+      "project_url": "https://yuyuyu.design/#/project/Slush",
+      "project_test_url": "https://yuyuyu-0g2936zwf38dde25-1258568418.tcloudbaseapp.com/#/project/Slush"
+  },
+  {
+      "name": "Baoku Jiangxin",
+      "year": 2020,
+      "location": "Shanghai",
+      "project_url": "https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/Covers/bkjx.jpg",
+      "project_test_url": "https://yuyuyu-0g2936zwf38dde25-1258568418.tcloudbaseapp.com/#/project/Milvus"
+  }
+]

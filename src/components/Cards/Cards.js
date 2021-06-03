@@ -8,7 +8,7 @@ export default class Cards extends React.Component {
         return (
                 <div className="cards-container">
                     <div className="card-container">
-                        <Link to="/project/hicool2020"><Card img_hover={img_url + "hicool2020.jpg"} img="https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/Covers/hicool2020.jpg" title="HICOOL 2020" year="2020-2021" location="Beijing" tag="Event" /></Link>
+                        <Link to="/project/hicool2020" replace><Card img_hover={img_url + "hicool2020.jpg"} img="https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/Covers/hicool2020.jpg" title="HICOOL 2020" year="2020-2021" location="Beijing" tag="Event" /></Link>
                     </div>
                     <div className="card-container">
                         <Link to="/project/Milvus"><Card img_hover={img_url + "milvus-conf-2020.jpg"} img="https://erinzy-1258568418.cos.ap-shanghai.myqcloud.com/yuyuyu-design/projects/Covers/milvus-conf-2020.jpg" title="Milvus" year="2020" location="Shanghai,Beijing" tag="Event" /></Link>

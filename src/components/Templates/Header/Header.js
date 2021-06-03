@@ -17,6 +17,7 @@ const connector = new AppSearchAPIConnector({
 // Step #3: Configuration options
 const configurationOptions = {
     alwaysSearchOnInitialLoad: false,
+    hasA11yNotifications: false,
     apiConnector: connector,
     searchQuery: {
       search_fields: {
@@ -34,7 +35,7 @@ const configurationOptions = {
             fallback: true // Fallback to a "raw" result.
           }
         },
-        project_url: {
+        project_test_url: {
           raw: {}
         },
         location: {
@@ -126,7 +127,7 @@ export default class Header extends React.Component {
                             }}
                         />
                 </nav>
-                <Results titleField="name" urlField="project_url" />
+                <Results titleField="name" urlField="project_test_url" />
             </SearchProvider>
         );
     }
