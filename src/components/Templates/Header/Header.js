@@ -3,61 +3,10 @@ import './Header.css';
 import logo from '../../../images/yuyuyu.svg';
 import menu_svg from '../../../images/menu.svg';
 import $ from 'jquery'
-import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
-import { SearchProvider, Results, SearchBox } from "@elastic/react-search-ui";
-import { Link } from 'react-router-dom'
-import "@elastic/react-search-ui-views/lib/styles/styles.css";
-
-const connector = new AppSearchAPIConnector({
-    searchKey: "search-23x955yvgw1hmhnduquuq573",
-    engineName: "yuyuyu-engine",
-    endpointBase: "https://yuyuyu-deployment.ent.us-west1.gcp.cloud.es.io",
-});
-
-// Step #3: Configuration options
-const configurationOptions = {
-    alwaysSearchOnInitialLoad: false,
-    hasA11yNotifications: false,
-    apiConnector: connector,
-    searchQuery: {
-      search_fields: {
-        // 1. Search by name of project.
-        name: {},
-        location: {},
-        year: {}
-      },
-      // 2. Results: name, project_url, location, year.
-      result_fields: {
-        name: {
-          // A snippet means that matching search terms will be wrapped in <em> tags.
-          snippet: {
-            size: 75, // Limit the snippet to 75 characters.
-            fallback: true // Fallback to a "raw" result.
-          }
-        },
-        project_test_url: {
-          raw: {}
-        },
-        location: {
-            // A snippet means that matching search terms will be wrapped in <em> tags.
-            snippet: {
-              size: 75, // Limit the snippet to 75 characters.
-              fallback: true // Fallback to a "raw" result.
-            }
-        },
-        year: {
-            // A snippet means that matching search terms will be wrapped in <em> tags.
-            snippet: {
-                size: 75, // Limit the snippet to 75 characters.
-                fallback: true // Fallback to a "raw" result.
-            }
-        },
-      }
-    }
-};
 
 export default class Header extends React.Component {
-    componentDidMount(){    
+    async componentDidMount(){    
+
         $(function () {
 
             // show hide subnav depending on scroll direction
@@ -90,45 +39,76 @@ export default class Header extends React.Component {
             });
         
         });
+
+        const data = {
+            "query": "",
+            "search_fields": {
+              "name": {},
+              "location": {},
+              "year": {}
+            },
+            "result_fields": {
+              "name": {
+                "snippet": {
+                  "size": 75,
+                  "fallback": true
+                }
+              },
+              "project_url": {
+                "raw": {}
+              },
+              "location": {
+                "snippet": {
+                  "size": 75,
+                  "fallback": true
+                }
+              },
+              "year": {
+                "snippet": {
+                  "size": 75,
+                  "fallback": true
+                }
+              }
+            },
+            // "page": {
+            //   "size": 20,
+            //   "current": 1
+            // }
+        }
+        // Default options are marked with *
+        var url = "https://yuyuyu-deployment.ent.us-west1.gcp.cloud.es.io/api/as/v1/engines/yuyuyu-engine/search"
+        const response = await fetch(url, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer search-23x955yvgw1hmhnduquuq573',
+            },
+            // redirect: 'follow', // manual, *follow, error
+            // referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify(data) // body data type must match "Content-Type" header
+        });
+        const results = await response.json();
+        console.log(results.results); // parses JSON response into native JavaScript objects
     }
 
     render() {
-        const isRoot = this.props.isRoot;
         return (
-            <SearchProvider config={configurationOptions}>
-                <nav className="navbar">
-                    {!isRoot && 
-                    <div className="logo">
-                        <a href="/#/home" replace><img src={logo} alt="Logo of Yuyuyu Design"/></a>
-                    </div>
-                    }
-                    {isRoot && 
-                        <div className="logo">
-                            <img src={logo} alt="Logo of Yuyuyu Design"/>
-                        </div>
-                    }
-                    <div className="menu">
-                        <div className="disabled">Work</div>
-                        <div className="disabled">About</div>
-                        <div className="disabled">Contact</div>
-                    </div> 
-                    <div className="menu-svg">
-                        <img src={menu_svg} alt="menu" />
-                    </div>
-                        {/* header={<SearchBox autocompleteSuggestions={true}/>} */}
-                        <SearchBox
-                            inputProps={{ placeholder: "placeholder" }}
-                            // autocompleteResults={{
-                            //     titleField: "name",
-                            //     urlField: "project_url"
-                            // }}
-                            autocompleteSuggestions={{
-                                sectionTitle: "Suggested Queries",
-                            }}
-                        />
-                </nav>
-                <Results titleField="name" urlField="project_test_url" />
-            </SearchProvider>
+            <nav className="navbar">
+                <div className="logo">
+                     <a href="/">
+                         <img src={logo} alt="Logo of Yuyuyu Design"/>
+                    </a>
+                </div>
+                <div className="menu">
+                    <div className="disabled">Work</div>
+                    <div className="disabled">About</div>
+                    <div className="disabled">Contact</div>
+                </div> 
+                <div className="menu-svg">
+                    <img src={menu_svg} alt="menu" />
+                </div>
+            </nav>
         );
     }
 }
