@@ -3,6 +3,57 @@ import './Header.css';
 import logo from '../../../images/yuyuyu.svg';
 import menu_svg from '../../../images/menu.svg';
 import $ from 'jquery'
+import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
+import { SearchProvider, Results, SearchBox } from "@elastic/react-search-ui";
+import { Link } from 'react-router-dom'
+import "@elastic/react-search-ui-views/lib/styles/styles.css";
+
+const connector = new AppSearchAPIConnector({
+    searchKey: "search-23x955yvgw1hmhnduquuq573",
+    engineName: "yuyuyu-engine",
+    endpointBase: "https://yuyuyu-deployment.ent.us-west1.gcp.cloud.es.io",
+});
+
+// Step #3: Configuration options
+const configurationOptions = {
+    alwaysSearchOnInitialLoad: false,
+    apiConnector: connector,
+    searchQuery: {
+      search_fields: {
+        // 1. Search by name of project.
+        name: {},
+        location: {},
+        year: {}
+      },
+      // 2. Results: name, project_url, location, year.
+      result_fields: {
+        name: {
+          // A snippet means that matching search terms will be wrapped in <em> tags.
+          snippet: {
+            size: 75, // Limit the snippet to 75 characters.
+            fallback: true // Fallback to a "raw" result.
+          }
+        },
+        project_url: {
+          raw: {}
+        },
+        location: {
+            // A snippet means that matching search terms will be wrapped in <em> tags.
+            snippet: {
+              size: 75, // Limit the snippet to 75 characters.
+              fallback: true // Fallback to a "raw" result.
+            }
+        },
+        year: {
+            // A snippet means that matching search terms will be wrapped in <em> tags.
+            snippet: {
+                size: 75, // Limit the snippet to 75 characters.
+                fallback: true // Fallback to a "raw" result.
+            }
+        },
+      }
+    }
+};
 
 export default class Header extends React.Component {
     componentDidMount(){    
@@ -42,21 +93,35 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <nav className="navbar">
-                <div className="logo">
-                     <a href="/">
-                         <img src={logo} alt="Logo of Yuyuyu Design"/>
+            <SearchProvider config={configurationOptions}>
+                <nav className="navbar">
+                    <a href="/#/home" replace>
+                        <div className="logo">
+                                <img src={logo} alt="Logo of Yuyuyu Design"/>
+                        </div>
                     </a>
-                </div>
-                <div className="menu">
-                    <div className="disabled">Work</div>
-                    <div className="disabled">About</div>
-                    <div className="disabled">Contact</div>
-                </div> 
-                <div className="menu-svg">
-                    <img src={menu_svg} alt="menu" />
-                </div>
-            </nav>
+                    <div className="menu">
+                        <div className="disabled">Work</div>
+                        <div className="disabled">About</div>
+                        <div className="disabled">Contact</div>
+                    </div> 
+                    <div className="menu-svg">
+                        <img src={menu_svg} alt="menu" />
+                    </div>
+                        {/* header={<SearchBox autocompleteSuggestions={true}/>} */}
+                        <SearchBox
+                            inputProps={{ placeholder: "placeholder" }}
+                            // autocompleteResults={{
+                            //     titleField: "name",
+                            //     urlField: "project_url"
+                            // }}
+                            autocompleteSuggestions={{
+                                sectionTitle: "Suggested Queries",
+                            }}
+                        />
+                </nav>
+                <Results titleField="name" urlField="project_url" />
+            </SearchProvider>
         );
     }
 }

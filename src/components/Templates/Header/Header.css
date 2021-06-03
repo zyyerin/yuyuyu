@@ -41,6 +41,20 @@
     transform: translateY(-100%);
 }
 
+.sui-result__details li:nth-child(5) {
+    display: none;
+}
+
+.sui-result__details li:nth-child(3) {
+    display: none;
+}
+
+.sui-results-container {
+    padding-top: 120px !important;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+}
+
 @media screen and (max-width: 800px) {
     .navbar {
         transition: all 300ms ease-in-out;
