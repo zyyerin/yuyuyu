@@ -40,8 +40,9 @@ export default class Header extends React.Component {
         
         });
 
+        var query = "slush"
         const data = {
-            "query": "",
+            "query": query,
             "search_fields": {
               "name": {},
               "location": {},
